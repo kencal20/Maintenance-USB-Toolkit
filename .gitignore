@@ -1,0 +1,12 @@
+# Ignore system-specific files
+*.DS_Store
+*.log
+*.bak
+*.swp
+Thumbs.db
+
+# Ignore large tools or binaries
+Sysinternals/*
+Other_Tools/*
+
+# Keep only scripts and launchers tracked
