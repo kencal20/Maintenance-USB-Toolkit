@@ -30,7 +30,8 @@ echo
 read -p "Select option: " choice
 mkdir -p Reports
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-REPORT_FILE="Reports/Report_${PLATFORM}_${TIMESTAMP}.txt"
+USERNAME=$(whoami)
+REPORT_FILE="Reports/Report_${PLATFORM}_${USERNAME}_${TIMESTAMP}.txt"
 
 case $choice in
 1)

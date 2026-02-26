@@ -16,7 +16,7 @@ set /p choice=Select option:
 if not exist "Reports" mkdir Reports
 setlocal enabledelayedexpansion
 set TIMESTAMP=%DATE:~-4%%DATE:~4,2%%DATE:~7,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
-set REPORT_FILE=Reports\Report_Windows_%TIMESTAMP%.txt
+set REPORT_FILE=Reports\Report_Windows_%USERNAME%_%TIMESTAMP%.txt
 set REPORT_FILE=%REPORT_FILE: =0%
 
 if "%choice%"=="1" (
