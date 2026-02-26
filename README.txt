@@ -25,7 +25,7 @@ FOLDER STRUCTURE
 
 Maintenance_Tools/
 │
-├── launch_linux.sh       → Linux launcher menu
+├── launch_unix.sh       → Linux launcher menu
 ├── launch_windows.bat    → Windows launcher menu
 ├── Sysinternals/         → Windows system tools
 ├── Scripts/              → Custom scripts
@@ -39,7 +39,7 @@ On Linux:
   1. Open terminal
   2. Navigate to this folder
   3. Run:
-     ./launch_linux.sh
+     ./launch_unix.sh
 
 On Windows:
   Double-click:
