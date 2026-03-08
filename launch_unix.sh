@@ -36,7 +36,7 @@ read -p "Select option: " choice
 mkdir -p Reports
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 USERNAME=$(whoami)
-REPORT_FILE="Reports/Report_${PLATFORM}_${USERNAME}_${TIMESTAMP}.txt"
+REPORT_FILE="Reports/Report_${PLATFORM}_${USERNAME}_${TIMESTAMP}.log"
 
 case $choice in
 1) bash ./Scripts/unix/system_info.sh >>"$REPORT_FILE" ;;

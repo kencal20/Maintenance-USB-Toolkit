@@ -10,7 +10,7 @@ if not exist "%REPORT_DIR%" mkdir "%REPORT_DIR%"
 :: Timestamp for report
 for /f "tokens=1-4 delims=/ " %%a in ('echo %date%') do set DATE=%%d-%%b-%%c
 for /f "tokens=1-2 delims=: " %%a in ('echo %time%') do set TIME=%%a-%%b
-set "REPORT_FILE=%REPORT_DIR%\Hardware_Report_Windows_%COMPUTERNAME%_%DATE%_%TIME%.txt"
+set "REPORT_FILE=%REPORT_DIR%\Hardware_Report_Windows_%COMPUTERNAME%_%DATE%_%TIME%.log"
 
 echo Running hardware diagnostics...
 echo Hardware diagnostics report will be saved to %REPORT_FILE%

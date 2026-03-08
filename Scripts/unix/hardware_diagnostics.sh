@@ -11,7 +11,7 @@ sudo -v || echo "⚠️ Some commands may fail without sudo access."
 mkdir -p Reports
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 USERNAME=$(whoami)
-REPORT_FILE="Reports/Hardware_Report_${USERNAME}_${TIMESTAMP}.txt"
+REPORT_FILE="Reports/Hardware_Report_${USERNAME}_${TIMESTAMP}.log"
 
 echo "Hardware Diagnostics Report" >"$REPORT_FILE"
 echo "Generated on $(date)" >>"$REPORT_FILE"

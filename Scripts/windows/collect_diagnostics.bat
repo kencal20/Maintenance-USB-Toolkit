@@ -9,7 +9,7 @@ set HOSTNAME=%COMPUTERNAME%
 for /f "tokens=1-4 delims=/ " %%a in ("%date%") do set DATE=%%d-%%b-%%c
 for /f "tokens=1-2 delims=: " %%a in ("%time%") do set TIME=%%a-%%b
 
-set REPORT_FILE=%REPORT_DIR%\system_report_%HOSTNAME%_%DATE%_%TIME%.txt
+set REPORT_FILE=%REPORT_DIR%\system_report_%HOSTNAME%_%DATE%_%TIME%.log
 
 (
 echo =======================================

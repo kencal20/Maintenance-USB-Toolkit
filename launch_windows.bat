@@ -40,7 +40,7 @@ set MIN=!MIN:~-2!
 set TIMESTAMP=!YY!!MM!!DD!_!HH!!MIN!
 
 REM Report path
-set "REPORT_FILE=%BASE_DIR%Reports\Report_Windows_%COMPUTERNAME%_%USERNAME%_!TIMESTAMP!.txt"
+set "REPORT_FILE=%BASE_DIR%Reports\Report_Windows_%COMPUTERNAME%_%USERNAME%_!TIMESTAMP!.log"
 
 REM Call scripts based on choice
 if "%choice%"=="1" call Scripts\windows\system_info.bat >> "!REPORT_FILE!" 2>&1
